@@ -92,7 +92,7 @@ This will clone and checkout to `master` branch.
 and creates a `subnet-evm` genesis file. The usage of this script is
 
 ```bash
-./scripts/run.sh [AVALANCHEGO VERSION] [GENESIS_ADDRESS]
+SKIP_NETWORK_RUNNER_SHUTDOWN=true ./scripts/run.sh [AVALANCHEGO VERSION] [GENESIS_ADDRESS]
 ```
 
 ```bash
@@ -101,7 +101,7 @@ cd ${HOME}/go/src/github.com/ava-labs/subnet-evm
 git pull
 
 # TODO: update the "avalanchego" version to latest
-SKIP_NETWORK_RUNNER_SHUTDOWN=true ./scripts/run.sh 1.7.17 0x8db97C7cEcE249c2b98bDC0226Cc4C2A57BF52FC
+SKIP_NETWORK_RUNNER_SHUTDOWN=true ./scripts/run.sh 1.8.5 0x8db97C7cEcE249c2b98bDC0226Cc4C2A57BF52FC
 ```
 
 Note: make sure you check the version compatibility above between AvalancheGo and Subnet-evm and use the proper version of AvalancheGo.
